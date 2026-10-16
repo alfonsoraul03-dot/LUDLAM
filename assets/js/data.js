@@ -97,7 +97,6 @@
       contact: SITE + "/miami/ludlam-point/guest-card/contact-us/1/",
       photos: SITE + "/miami/ludlam-point/photos/",
       amenities: SITE + "/miami/ludlam-point/amenities/",
-      tour360: "https://tour.tourbuilder.com?tour=63743f15a8e21f24451239e0",
       residents: "https://app.homebody.com",
       directions: "https://www.google.com/maps/dir/?api=1&destination=6880+SW+44th+St,+Miami,+FL+33155",
       mapOpen: "https://www.google.com/maps/search/?api=1&query=6880+SW+44th+St,+Miami,+FL+33155",
@@ -125,6 +124,7 @@
     plans: [
       {
         id: "carlyle",
+        tone: "pool",
         name: "Carlyle",
         beds: 1, baths: 1, sqft: 750,
         levels: 1,
@@ -135,6 +135,7 @@
       },
       {
         id: "delano",
+        tone: "coral",
         name: "Delano",
         beds: 1, baths: 1, sqft: 750,
         levels: 2,
@@ -146,6 +147,7 @@
       },
       {
         id: "avalon",
+        tone: "palm",
         name: "Avalon",
         beds: 2, baths: 2, sqft: 950,
         levels: 2,
@@ -157,6 +159,7 @@
       },
       {
         id: "beacon",
+        tone: "sun",
         name: "Beacon",
         beds: 2, baths: 2, sqft: 950,
         levels: 2,
@@ -204,6 +207,7 @@
     scenes: [
       {
         id: "mornings",
+        tone: "sun",
         title: "Slow mornings.",
         body: "Light through the bedroom window, coffee at the granite counter, and laundry running in your own washer and dryer.",
         items: ["In-home washer and dryer", "Spacious walk-in closets", "Granite counters", "Ceiling fan in the dining room"],
@@ -212,6 +216,7 @@
       },
       {
         id: "recharge",
+        tone: "pool",
         title: "Room to recharge.",
         body: "A fitness center for the early workout, then the pool for the long afternoon. Both are a short walk from your door.",
         items: ["Fitness center", "Community swimming pool"],
@@ -220,6 +225,7 @@
       },
       {
         id: "outside",
+        tone: "palm",
         title: "Time outside.",
         body: "Courtyards with BBQ grills for weekend cookouts, a basketball court for a pickup game, and a bark park with a paw spa for the dog.",
         items: ["Courtyards with BBQ grills", "Basketball court", "Bark park with paw spa", "Wi-Fi in common areas"],
@@ -228,11 +234,40 @@
       },
       {
         id: "routine",
+        tone: "coral",
         title: "Space for your routine.",
         body: "The everyday details are handled: a gated electronic entrance, a car care center, bike storage and maintenance around the clock.",
         items: ["Gated electronic entrance", "Car care center with wash and vacuum", "Bicycle storage", "24-hour emergency maintenance", "Online rent payments", "Flex | Split rent option"],
         photo: P.amenCarWash,
         alt: "Outdoor car wash station surrounded by greenery and palm trees",
+      },
+    ],
+
+    /* "Step inside" sequence: each step swaps the photo and the room color */
+    insideSteps: [
+      {
+        tone: "pool",
+        kicker: "Living",
+        title: "Open plans with light to spare.",
+        body: "Living, dining and kitchen share one bright room, with hardwood-style floors, crown molding and a ceiling fan over the dining table.",
+        photo: P.openConcept,
+        alt: "Open-concept living room, dining area and kitchen with breakfast bar",
+      },
+      {
+        tone: "sun",
+        kicker: "Kitchen",
+        title: "Granite, subway tile and stainless steel.",
+        body: "White custom cabinetry with brushed nickel hardware, energy-efficient stainless appliances, a dishwasher and a single-handle pullout faucet.",
+        photo: P.kitchenBar,
+        alt: "Kitchen with stainless-steel appliances, granite counters and bar seating",
+      },
+      {
+        tone: "coral",
+        kicker: "Bedroom",
+        title: "Room for everything you own.",
+        body: "Spacious walk-in closets, an in-home washer and dryer, and 8-foot ceilings that open up to vaulted ceilings on top floors.",
+        photo: P.bed3,
+        alt: "Bedroom with a yellow throw, wood-style floor and large window",
       },
     ],
 

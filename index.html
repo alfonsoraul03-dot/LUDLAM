@@ -6,22 +6,21 @@
   <title>Ludlam Point | Apartments in Glenvar Heights, Miami, FL</title>
   <meta name="description" content="One- and two-bedroom apartments, including two-level layouts, at 6880 SW 44th Street in Miami. In-home washer and dryer, resort-style pool, fitness center, bark park and a gated entrance. Schedule a tour.">
   <link rel="canonical" href="https://www.ludlampoint.com/">
-  <meta name="theme-color" content="#16241d">
+  <meta name="theme-color" content="#19b3c3">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ludlam Point">
   <meta property="og:title" content="Ludlam Point | Apartments in Miami, FL">
-  <meta property="og:description" content="One- and two-bedroom apartments with in-home laundry, a resort-style pool and room to breathe in Glenvar Heights, Miami.">
-  <meta property="og:image" content="https://medialibrarycfo.entrata.com/16362/MLv3/5/29/2025/09/10/101025/62746_100120030_6802bb329f53f3.80988154285.jpg">
+  <meta property="og:description" content="One- and two-bedroom apartments with in-home laundry, a resort-style pool and palm-lined grounds in Glenvar Heights, Miami.">
+  <meta property="og:image" content="assets/img/1920/poolPalms.webp">
   <meta property="og:url" content="https://www.ludlampoint.com/">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316241d'/%3E%3Cpath d='M8 26V14a8 8 0 0 1 16 0v12' fill='none' stroke='%23e2b866' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2319b3c3'/%3E%3Ccircle cx='16' cy='14' r='6' fill='%23ffc93c'/%3E%3Cpath d='M4 23c4-3 8-3 12 0s8 3 12 0' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://medialibrarycfo.entrata.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Fraunces:ital,opsz,wght@1,9..144,500..700&family=Figtree:wght@400;500;600;700&display=swap">
   <link rel="preload" as="image" href="assets/img/1280/poolPalms.webp"
         imagesrcset="assets/img/640/poolPalms.webp 640w, assets/img/1280/poolPalms.webp 1280w, assets/img/1920/poolPalms.webp 1920w"
         imagesizes="100vw" fetchpriority="high">
@@ -34,7 +33,6 @@
     "name": "Ludlam Point",
     "url": "https://www.ludlampoint.com/",
     "telephone": "+1-239-999-8374",
-    "image": "https://medialibrarycfo.entrata.com/16362/MLv3/5/29/2025/09/10/101025/62746_100120030_6802bb329f53f3.80988154285.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "6880 SW 44th Street",
@@ -62,12 +60,15 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ============ NAVIGATION ============ -->
-  <header class="nav" id="nav" data-state="over-hero">
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="wordmark" href="#top" aria-label="Ludlam Point, back to top">
-        <svg class="wordmark__arch" viewBox="0 0 24 30" aria-hidden="true"><path d="M3 29V12a9 9 0 0 1 18 0v17"/></svg>
-        <span class="wordmark__name">Ludlam Point</span>
+      <a class="logo" href="#top" aria-label="Ludlam Point, back to top">
+        <svg class="logo__sun" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="17" r="8"/>
+          <path d="M4 29c5-4 11-4 16 0s11 4 16 0"/>
+        </svg>
+        <span class="logo__word">Ludlam<b>Point</b></span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#apartments">Apartments</a>
@@ -77,376 +78,335 @@
       </nav>
       <div class="nav__actions">
         <a class="nav__apply" href="" data-link="apply" target="_blank" rel="noopener">Apply</a>
-        <a class="btn btn--sun btn--sm" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
-        <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="menu">
-          <span class="nav__toggle-label">Menu</span>
-          <span class="nav__toggle-icon" aria-hidden="true"><i></i><i></i></span>
+        <a class="btn btn--coral btn--sm nav__tour" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
+        <button class="burger" id="menuToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile menu -->
   <div class="menu" id="menu" hidden>
     <nav class="menu__links" aria-label="Mobile">
-      <a href="#apartments">Apartments</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#neighborhood">Neighborhood</a>
-      <a href="#visit">Visit &amp; Lease</a>
+      <a href="#apartments"><span>01</span>Apartments</a>
+      <a href="#amenities"><span>02</span>Amenities</a>
+      <a href="#gallery"><span>03</span>Gallery</a>
+      <a href="#neighborhood"><span>04</span>Neighborhood</a>
+      <a href="#visit"><span>05</span>Visit &amp; Lease</a>
     </nav>
     <div class="menu__actions">
-      <a class="btn btn--sun" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
-      <a class="btn btn--line-light" href="" data-link="apply" target="_blank" rel="noopener">Apply Online</a>
+      <a class="btn btn--coral" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
+      <a class="btn btn--white" href="" data-link="apply" target="_blank" rel="noopener">Apply Online</a>
     </div>
-    <div class="menu__meta">
-      <p><span data-fill="street"></span>, <span data-fill="cityline"></span></p>
-      <p><a href="" data-link="phone" data-fill="phone"></a></p>
-      <p><a href="" data-link="residents" target="_blank" rel="noopener">Resident portal</a></p>
-    </div>
+    <p class="menu__meta"><span data-fill="street"></span>, <span data-fill="cityline"></span><br><a href="" data-link="phone" data-fill="phone"></a></p>
   </div>
 
   <main id="main">
 
-    <!-- ============ SCENE 1 · HERO ============ -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero__media">
-        <img class="hero__img" data-photo="poolPalms" data-sizes="100vw" data-eager
-             alt="The Ludlam Point pool framed by palm trees, with the apartment buildings behind it under a clear sky">
-        <div class="hero__shade" aria-hidden="true"></div>
-      </div>
-      <div class="hero__content wrap">
-        <p class="eyebrow eyebrow--light reveal-line"><span>Glenvar Heights · Miami, Florida</span></p>
-        <h1 class="hero__title" id="hero-title">
-          <span class="line"><span>Your next</span></span>
-          <span class="line"><span>chapter <em>starts</em></span></span>
-          <span class="line"><span>here.</span></span>
-        </h1>
-        <div class="hero__foot">
-          <p class="hero__lede">Discover comfortable apartment living in Miami, with the spaces, amenities, and convenience to make yourself at home.</p>
-          <div class="hero__ctas">
-            <a class="btn btn--sun" href="#apartments">Explore Floor Plans</a>
-            <a class="btn btn--line-light" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
+    <!-- ================= HERO: framed pool that opens to full screen ================= -->
+    <section class="hero" id="top" data-scroll aria-labelledby="hero-title">
+      <div class="hero__stage">
+        <div class="hero__copy">
+          <p class="tag tag--pool"><span class="dot"></span>Glenvar Heights · Miami, Florida</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="ln"><span>Your next chapter</span></span>
+            <span class="ln"><span>starts <em>here.</em></span></span>
+          </h1>
+        </div>
+        <div class="hero__frame">
+          <img class="hero__img" data-photo="poolPalms" data-sizes="100vw" data-eager
+               alt="The Ludlam Point pool framed by palm trees, with the apartment buildings behind it under a clear sky">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="hero__panel">
+            <p class="hero__lede">Discover comfortable apartment living in Miami, with the spaces, amenities, and convenience to make yourself at home.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--sun" href="#apartments">Explore Floor Plans</a>
+              <a class="btn btn--glass" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour ↗</a>
+            </div>
           </div>
         </div>
-      </div>
-      <dl class="hero__facts wrap" aria-label="At a glance">
-        <div><dt>Homes</dt><dd>1 &amp; 2 bedrooms</dd></div>
-        <div><dt>Layouts</dt><dd>Flats &amp; two-level</dd></div>
-        <div><dt>Every home</dt><dd>Washer &amp; dryer</dd></div>
-        <div><dt>Address</dt><dd>6880 SW 44th St</dd></div>
-      </dl>
-    </section>
-
-    <!-- ============ SCENE 2 · THE PLACE (arch reveal) ============ -->
-    <section class="reveal-scene" id="story" data-scroll aria-labelledby="story-title">
-      <div class="reveal-scene__stage">
-        <div class="reveal-scene__frame">
-          <img data-photo="path" data-sizes="100vw" alt="A shaded walking path between Ludlam Point buildings, lined with palms">
-        </div>
-        <div class="reveal-scene__copy wrap">
-          <p class="eyebrow">The place</p>
-          <h2 id="story-title" class="display-l">Low-rise buildings, palms and courtyards, minutes from Coral Gables.</h2>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="badgeCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#badgeCircle">6880 SW 44TH STREET · MIAMI FL 33155 · </textPath></text>
+          </svg>
+          <span class="badge__sun"></span>
         </div>
       </div>
     </section>
 
-    <!-- ============ SCENE 3 · COMMUNITY (horizontal) ============ -->
-    <section class="reel" id="community" data-scroll aria-labelledby="community-title">
-      <div class="reel__stage">
-        <div class="reel__head wrap">
-          <p class="eyebrow">Outside your door</p>
-          <h2 id="community-title" class="display-m">A resort-style pool and green space to wander.</h2>
+    <!-- Ticker -->
+    <div class="ticker" aria-label="Community highlights">
+      <div class="ticker__track">
+        <ul>
+          <li>Resort-style pool</li><li>In-home washer &amp; dryer</li><li>Fitness center</li><li>Bark park &amp; paw spa</li><li>Courtyard BBQ grills</li><li>Basketball court</li><li>Gated entrance</li><li>Car care center</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Resort-style pool</li><li>In-home washer &amp; dryer</li><li>Fitness center</li><li>Bark park &amp; paw spa</li><li>Courtyard BBQ grills</li><li>Basketball court</li><li>Gated entrance</li><li>Car care center</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= POSTCARDS: photos fan out on scroll ================= -->
+    <section class="cards" id="community" data-scroll aria-labelledby="cards-title">
+      <div class="cards__stage">
+        <div class="cards__head">
+          <p class="tag tag--coral"><span class="dot"></span>Outside your door</p>
+          <h2 class="h-xl" id="cards-title">Palms, sunshine <em>and a pool</em> to come home to.</h2>
         </div>
-        <div class="reel__track" tabindex="0" aria-label="Community photos, scroll sideways">
-          <figure class="reel__panel reel__panel--wide">
-            <img data-photo="amenPool" data-sizes="(min-width: 900px) 60vw, 85vw" alt="Pool with lounge seating, palm trees and apartment buildings">
-            <figcaption><span>Pool</span> Lounge poolside under the palms.</figcaption>
+        <div class="cards__deck" id="cardDeck">
+          <figure class="card" style="--r:-7deg;--tone:var(--pool)">
+            <img data-photo="amenPool" data-sizes="(min-width: 900px) 30vw, 78vw" alt="Pool with lounge chairs, palm trees and apartment buildings">
+            <figcaption>The pool</figcaption>
           </figure>
-          <figure class="reel__panel reel__panel--tall">
-            <img data-photo="entrance" data-sizes="(min-width: 900px) 32vw, 75vw" alt="Blue stucco building entrance with palms and a brick walkway">
-            <figcaption><span>Arrivals</span> Brick walks and blue stucco.</figcaption>
+          <figure class="card" style="--r:4deg;--tone:var(--coral)">
+            <img data-photo="entrance" data-sizes="(min-width: 900px) 30vw, 78vw" alt="Blue stucco building entrance with palms and a brick walkway">
+            <figcaption>Blue stucco &amp; brick walks</figcaption>
           </figure>
-          <figure class="reel__panel reel__panel--wide">
-            <img data-photo="poolBar" data-sizes="(min-width: 900px) 60vw, 85vw" alt="Covered poolside bar with high stools beside the pool">
-            <figcaption><span>Poolside bar</span> Shade, stools and a view of the water.</figcaption>
+          <figure class="card" style="--r:-3deg;--tone:var(--sun)">
+            <img data-photo="path" data-sizes="(min-width: 900px) 30vw, 78vw" alt="Shaded path between buildings lined with palms">
+            <figcaption>Palm-lined paths</figcaption>
           </figure>
-          <figure class="reel__panel reel__panel--tall">
-            <img data-photo="ext2" data-sizes="(min-width: 900px) 32vw, 75vw" alt="Covered grill station with a stone counter and bar stools">
-            <figcaption><span>Grill pavilion</span> Covered grills for weekend cookouts.</figcaption>
+          <figure class="card" style="--r:6deg;--tone:var(--palm)">
+            <img data-photo="poolBar" data-sizes="(min-width: 900px) 30vw, 78vw" alt="Covered poolside bar with high stools">
+            <figcaption>Poolside shade</figcaption>
           </figure>
-          <figure class="reel__panel reel__panel--wide">
-            <img data-photo="amenCourt" data-sizes="(min-width: 900px) 60vw, 85vw" alt="Outdoor basketball court surrounded by trees">
-            <figcaption><span>Basketball court</span> For a pickup game or a solo shootaround.</figcaption>
+          <figure class="card" style="--r:-5deg;--tone:var(--coral)">
+            <img data-photo="amenBbq" data-sizes="(min-width: 900px) 30vw, 78vw" alt="Covered grill area with stainless-steel grills and tropical plants">
+            <figcaption>Courtyard grills</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ SCENE 4 · INSIDE (arch expands) ============ -->
-    <section class="inside" id="inside" data-scroll aria-labelledby="inside-title">
-      <div class="inside__stage">
-        <div class="inside__frame">
-          <img data-photo="openConcept" data-sizes="100vw" alt="Open-concept apartment with living area, kitchen with breakfast bar and dining space">
-        </div>
-        <div class="inside__copy">
-          <p class="eyebrow eyebrow--light">Step inside</p>
-          <h2 id="inside-title" class="display-l">Open plans with light to spare.</h2>
-        </div>
+    <!-- ================= STEP INSIDE: color changes per room ================= -->
+    <section class="inside" id="inside" aria-labelledby="inside-title" data-tone="pool">
+      <h2 class="sr-only" id="inside-title">Inside the apartments</h2>
+      <div class="inside__grid">
+        <div class="inside__media" id="insideMedia" aria-hidden="true"></div>
+        <div class="inside__steps" id="insideSteps"></div>
+      </div>
+      <div class="inside__features">
+        <p class="tag tag--ink"><span class="dot"></span>In every home</p>
+        <ul id="featureList"></ul>
+        <p class="fine">Not all features are available in every rental home.</p>
       </div>
     </section>
 
-    <!-- ============ SCENE 5 · KITCHEN & FEATURES ============ -->
-    <section class="features wrap" id="features" aria-labelledby="features-title">
-      <div class="features__media">
-        <div class="features__img" data-parallax>
-          <img data-photo="kitchenBar" data-sizes="(min-width: 900px) 45vw, 100vw" alt="Kitchen with stainless-steel appliances and bar seating">
-        </div>
-        <div class="features__inset">
-          <img data-photo="bed3" data-sizes="(min-width: 900px) 18vw, 40vw" alt="Bedroom with a yellow throw and a large window">
-        </div>
-      </div>
-      <div class="features__copy">
-        <p class="eyebrow">In every home</p>
-        <h2 id="features-title" class="display-m">Granite, subway tile and a washer and dryer of your own.</h2>
-        <p class="lede">Kitchens come with stainless-steel, energy-efficient appliances, white custom cabinetry with brushed nickel hardware and a single-handle pullout faucet. The rest of the home keeps up.</p>
-        <ul class="features__list" id="featureList"></ul>
-        <p class="fineprint">Not all features are available in every rental home.</p>
-      </div>
-    </section>
-
-    <!-- ============ SCENE 6 · FLOOR PLANS ============ -->
+    <!-- ================= FLOOR PLANS ================= -->
     <section class="plans" id="apartments" aria-labelledby="plans-title">
       <div class="wrap">
         <div class="plans__head">
           <div>
-            <p class="eyebrow">Apartments</p>
-            <h2 id="plans-title" class="display-l">Four layouts. <br class="br-wide">One or two bedrooms.</h2>
+            <p class="tag tag--palm"><span class="dot"></span>Apartments</p>
+            <h2 class="h-xl" id="plans-title">Pick your <em>layout.</em></h2>
           </div>
-          <div class="plans__filters" role="group" aria-label="Filter floor plans">
-            <button class="chip" aria-pressed="true" data-filter="all">All plans</button>
-            <button class="chip" aria-pressed="false" data-filter="1">1 Bedroom</button>
-            <button class="chip" aria-pressed="false" data-filter="2">2 Bedrooms</button>
-            <button class="chip" aria-pressed="false" data-filter="two-level">Two-level</button>
+          <div class="pills" role="group" aria-label="Filter floor plans">
+            <button class="pill" aria-pressed="true" data-filter="all">All</button>
+            <button class="pill" aria-pressed="false" data-filter="1">1 Bedroom</button>
+            <button class="pill" aria-pressed="false" data-filter="2">2 Bedrooms</button>
+            <button class="pill" aria-pressed="false" data-filter="two-level">Two-level</button>
           </div>
         </div>
-        <div class="plans__body">
-          <ol class="plans__list" id="planList" aria-live="polite"></ol>
-          <div class="plans__preview" aria-hidden="true">
-            <div class="plans__preview-card">
-              <img id="planPreviewImg" alt="">
-              <p class="plans__preview-name" id="planPreviewName"></p>
+
+        <div class="viewer">
+          <div class="viewer__list" id="planList" role="tablist" aria-label="Floor plans"></div>
+          <div class="viewer__stage" id="planStage" role="tabpanel" aria-live="polite">
+            <div class="viewer__blob" aria-hidden="true"></div>
+            <div class="viewer__img"><img id="stageImg" alt=""></div>
+            <div class="viewer__info">
+              <div class="viewer__top">
+                <h3 class="viewer__name" id="stageName"></h3>
+                <span class="viewer__levels" id="stageLevels"></span>
+              </div>
+              <dl class="viewer__specs" id="stageSpecs"></dl>
+              <p class="viewer__price" id="stagePrice"></p>
+              <div class="viewer__ctas">
+                <button class="btn btn--ink" type="button" id="stageOpen">Plan Details</button>
+                <a class="btn btn--line" id="stageLive" href="" target="_blank" rel="noopener">Check Availability ↗</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="plans__note">
+
+        <div class="plans__foot">
           <p id="specialNote" class="special" hidden></p>
-          <p class="fineprint" id="pricingNote"></p>
-          <a class="textlink" href="" data-link="floorPlans" target="_blank" rel="noopener">See every available home in the live leasing system</a>
+          <p class="fine" id="pricingNote"></p>
+          <a class="link" href="" data-link="floorPlans" target="_blank" rel="noopener">See every available home in the live leasing system ↗</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ SCENE 7 · AMENITIES STORY ============ -->
-    <section class="scenes" id="amenities" aria-labelledby="amenities-title">
-      <div class="wrap scenes__intro">
-        <p class="eyebrow eyebrow--light">Amenities</p>
-        <h2 id="amenities-title" class="display-l">A day at Ludlam Point.</h2>
-      </div>
-      <div class="wrap scenes__grid">
-        <div class="scenes__visual" aria-hidden="true" id="sceneVisual"></div>
-        <div class="scenes__list" id="sceneList"></div>
-      </div>
-      <div class="wrap scenes__foot">
-        <p>Pets welcome: dogs and cats are allowed. Ask the leasing team about pet policies and fees.</p>
-        <a class="textlink textlink--light" href="" data-link="amenities" target="_blank" rel="noopener">Full amenity list on the official site</a>
+    <!-- ================= AMENITIES: a day in four colors ================= -->
+    <section class="day" id="amenities" data-scroll aria-labelledby="day-title">
+      <div class="day__stage">
+        <div class="day__intro">
+          <p class="tag tag--white"><span class="dot"></span>Amenities</p>
+          <h2 class="h-xl" id="day-title">A day at <em>Ludlam Point.</em></h2>
+          <p class="day__hint" aria-hidden="true">Keep scrolling →</p>
+        </div>
+        <div class="day__track" id="dayTrack"></div>
       </div>
     </section>
 
-    <!-- ============ SCENE 8 · GALLERY ============ -->
+    <!-- ================= GALLERY ================= -->
     <section class="gallery" id="gallery" aria-labelledby="gallery-title">
       <div class="wrap">
         <div class="gallery__head">
           <div>
-            <p class="eyebrow">Gallery</p>
-            <h2 id="gallery-title" class="display-l">Look around.</h2>
+            <p class="tag tag--pool"><span class="dot"></span>Gallery</p>
+            <h2 class="h-xl" id="gallery-title">Take a <em>look around.</em></h2>
           </div>
-          <div class="tabs" role="tablist" aria-label="Photo categories">
-            <button role="tab" id="tab-apartments" aria-selected="true" aria-controls="galleryGrid" data-tab="apartments">Apartments <span></span></button>
-            <button role="tab" id="tab-community" aria-selected="false" aria-controls="galleryGrid" data-tab="community" tabindex="-1">Community <span></span></button>
-            <button role="tab" id="tab-plans" aria-selected="false" aria-controls="galleryGrid" data-tab="plans" tabindex="-1">Floor plans <span></span></button>
+          <div class="pills" role="tablist" aria-label="Photo categories">
+            <button class="pill" role="tab" id="tab-apartments" aria-selected="true" aria-controls="galleryGrid" data-tab="apartments">Apartments <small></small></button>
+            <button class="pill" role="tab" id="tab-community" aria-selected="false" aria-controls="galleryGrid" data-tab="community" tabindex="-1">Community <small></small></button>
+            <button class="pill" role="tab" id="tab-plans" aria-selected="false" aria-controls="galleryGrid" data-tab="plans" tabindex="-1">Floor plans <small></small></button>
           </div>
         </div>
         <div class="gallery__grid" id="galleryGrid" role="tabpanel" aria-labelledby="tab-apartments"></div>
-        <div class="gallery__more">
-          <button class="btn btn--line" id="galleryMore" hidden>Show all photos</button>
-        </div>
+        <div class="gallery__more"><button class="btn btn--line" id="galleryMore" hidden>Show all photos</button></div>
       </div>
-
-      <a class="tour360" href="" data-link="tour360" target="_blank" rel="noopener">
-        <div class="tour360__img">
-          <img data-photo="lounge" data-sizes="100vw" alt="">
-        </div>
-        <div class="tour360__copy wrap">
-          <span class="tour360__badge" aria-hidden="true">360°</span>
-          <span class="tour360__title">Walk the community in 360°</span>
-          <span class="tour360__cta">Open the virtual tour <span aria-hidden="true">↗</span></span>
-        </div>
-      </a>
     </section>
 
-    <!-- ============ SCENE 9 · NEIGHBORHOOD ============ -->
+    <!-- ================= NEIGHBORHOOD ================= -->
     <section class="hood" id="neighborhood" aria-labelledby="hood-title">
       <div class="wrap hood__grid">
         <div class="hood__copy">
-          <p class="eyebrow">Neighborhood</p>
-          <h2 id="hood-title" class="display-l">Glenvar Heights, between the Gables and Dadeland.</h2>
-          <p class="lede">Ludlam Point sits in a residential part of southwest Miami, close to Coral Gables, Coconut Grove and downtown, with major shopping and two of the area's largest employers nearby.</p>
-          <div class="hood__lists" id="nearbyList"></div>
-          <address class="hood__address">
-            <span data-fill="street"></span><br><span data-fill="cityline"></span>
-          </address>
+          <p class="tag tag--ink"><span class="dot"></span>Neighborhood</p>
+          <h2 class="h-xl" id="hood-title">Between the Gables <em>and Dadeland.</em></h2>
+          <p class="lede">Ludlam Point sits in Glenvar Heights, a residential part of southwest Miami close to Coral Gables, Coconut Grove and downtown, with major shopping and two of the area's largest employers nearby.</p>
+          <div class="hood__stickers" id="nearbyList"></div>
           <div class="hood__ctas">
-            <a class="btn btn--ink" href="" data-link="directions" target="_blank" rel="noopener">Get Directions</a>
-            <a class="textlink" href="" data-link="mapOpen" target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="btn btn--ink" href="" data-link="directions" target="_blank" rel="noopener">Get Directions ↗</a>
+            <a class="link" href="" data-link="mapOpen" target="_blank" rel="noopener">Open in Google Maps ↗</a>
           </div>
         </div>
         <div class="hood__map">
-          <div class="hood__map-frame" id="mapFrame" data-src="">
-            <button class="hood__map-load" id="mapLoad" type="button">
-              <span class="hood__pin" aria-hidden="true"></span>
-              <span>Show interactive map</span>
-            </button>
+          <div class="hood__map-frame" id="mapFrame">
+            <button class="hood__map-load" id="mapLoad" type="button"><span class="pin" aria-hidden="true"></span>Show map</button>
           </div>
-          <p class="fineprint">Map data © Google. Use directions for travel times from your starting point.</p>
+          <address class="hood__address">
+            <strong>Ludlam Point</strong>
+            <span data-fill="street"></span><br><span data-fill="cityline"></span>
+          </address>
         </div>
       </div>
     </section>
 
-    <!-- ============ SCENE 10 · VISIT & LEASE ============ -->
+    <!-- ================= VISIT ================= -->
     <section class="visit" id="visit" aria-labelledby="visit-title">
-      <div class="visit__bg" aria-hidden="true">
-        <img data-photo="ext1" data-sizes="100vw" alt="">
-      </div>
-      <div class="wrap visit__inner">
-        <div class="visit__head">
-          <p class="eyebrow eyebrow--light">Visit &amp; lease</p>
-          <h2 id="visit-title" class="display-xl">Come see it in person.</h2>
-        </div>
-        <div class="visit__actions">
-          <a class="action" href="" data-link="contact" target="_blank" rel="noopener">
-            <span class="action__step">Tour</span>
-            <span class="action__title">Schedule a tour</span>
-            <span class="action__desc">Request a time with the leasing team using the official form.</span>
-            <span class="action__arrow" aria-hidden="true">↗</span>
+      <div class="wrap">
+        <h2 class="visit__title" id="visit-title">Come see it <em>in person.</em></h2>
+        <div class="visit__grid">
+          <a class="go go--sun" href="" data-link="contact" target="_blank" rel="noopener">
+            <span class="go__label">Tour</span>
+            <span class="go__title">Schedule a tour</span>
+            <span class="go__desc">Request a time with the leasing team on the official form.</span>
+            <span class="go__arrow" aria-hidden="true">↗</span>
           </a>
-          <a class="action" href="" data-link="floorPlans" target="_blank" rel="noopener">
-            <span class="action__step">Homes</span>
-            <span class="action__title">Check availability</span>
-            <span class="action__desc">See today's available homes, move-in dates and pricing.</span>
-            <span class="action__arrow" aria-hidden="true">↗</span>
+          <a class="go go--white" href="" data-link="floorPlans" target="_blank" rel="noopener">
+            <span class="go__label">Homes</span>
+            <span class="go__title">Check availability</span>
+            <span class="go__desc">Today's available homes, move-in dates and pricing.</span>
+            <span class="go__arrow" aria-hidden="true">↗</span>
           </a>
-          <a class="action" href="" data-link="apply" target="_blank" rel="noopener">
-            <span class="action__step">Apply</span>
-            <span class="action__title">Apply online</span>
-            <span class="action__desc">Start your application in the official leasing portal.</span>
-            <span class="action__arrow" aria-hidden="true">↗</span>
+          <a class="go go--ink" href="" data-link="apply" target="_blank" rel="noopener">
+            <span class="go__label">Apply</span>
+            <span class="go__title">Apply online</span>
+            <span class="go__desc">Start your application in the official leasing portal.</span>
+            <span class="go__arrow" aria-hidden="true">↗</span>
           </a>
         </div>
-        <div class="visit__contact">
+        <div class="visit__info">
           <div>
-            <p class="visit__label">Call the leasing office</p>
-            <p class="visit__phone">
-              <a href="" data-link="phone" data-fill="phone"></a>
-              <button class="copy" type="button" id="copyPhone">Copy</button>
-            </p>
-            <p class="visit__copy-status" id="copyStatus" role="status"></p>
+            <p class="label">Call the leasing office</p>
+            <p class="visit__phone"><a href="" data-link="phone" data-fill="phone"></a> <button class="copy" type="button" id="copyPhone">Copy</button></p>
+            <p class="visit__status" id="copyStatus" role="status"></p>
           </div>
           <div>
-            <p class="visit__label">Office hours</p>
+            <p class="label">Office hours</p>
             <dl class="hours" id="hoursList"></dl>
           </div>
           <div>
-            <p class="visit__label">Already live here?</p>
-            <a class="textlink textlink--light" href="" data-link="residents" target="_blank" rel="noopener">Resident portal</a>
+            <p class="label">Pets</p>
+            <p>Dogs and cats are welcome. Ask the leasing team about pet policies and fees.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <div class="wrap footer__grid">
-      <div class="footer__brand">
-        <p class="footer__name">Ludlam Point</p>
+    <div class="wrap">
+      <p class="footer__big" aria-hidden="true">Ludlam Point</p>
+      <div class="footer__grid">
         <address>
           <span data-fill="street"></span><br>
           <span data-fill="cityline"></span><br>
           <a href="" data-link="phone" data-fill="phone"></a>
         </address>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#apartments">Apartments</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#neighborhood">Neighborhood</a>
+          <a href="" data-link="apply" target="_blank" rel="noopener">Apply</a>
+          <a href="" data-link="residents" target="_blank" rel="noopener">Resident Portal</a>
+        </nav>
+        <div class="footer__legal">
+          <p class="eho">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 16 5l12 10v13H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 17h10M11 22h10" stroke="currentColor" stroke-width="2"/></svg>
+            Equal Housing Opportunity
+          </p>
+          <p>Professionally managed by <span data-fill="manager"></span>.</p>
+          <ul id="legalLinks"></ul>
+        </div>
       </div>
-      <nav class="footer__nav" aria-label="Footer">
-        <a href="#apartments">Apartments</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#neighborhood">Neighborhood</a>
-        <a href="" data-link="apply" target="_blank" rel="noopener">Apply</a>
-        <a href="" data-link="residents" target="_blank" rel="noopener">Residents</a>
-      </nav>
-      <div class="footer__legal">
-        <p class="eho">
-          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 16 5l12 10v13H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 17h10M11 22h10" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Equal Housing Opportunity</span>
-        </p>
-        <p>Professionally managed by <span data-fill="manager"></span>.</p>
-        <ul id="legalLinks"></ul>
+      <div class="footer__base">
+        <p>© <span id="year">2026</span> Ludlam Point. Prices, availability and specials are subject to change.</p>
+        <a href="#top">Back to top ↑</a>
       </div>
-    </div>
-    <div class="wrap footer__base">
-      <p>© <span id="year">2026</span> Ludlam Point. Prices, availability and specials are subject to change.</p>
-      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <!-- Mobile leasing bar -->
-  <div class="dock" id="dock" aria-label="Quick actions">
+  <div class="dock" id="dock">
     <a class="dock__btn" href="#apartments">Floor Plans</a>
-    <a class="dock__btn dock__btn--sun" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
+    <a class="dock__btn dock__btn--coral" href="" data-link="contact" target="_blank" rel="noopener">Schedule a Tour</a>
   </div>
 
-  <!-- Floor plan detail -->
-  <dialog class="plan-dialog" id="planDialog" aria-labelledby="pdName">
-    <div class="plan-dialog__inner">
-      <header class="plan-dialog__bar">
-        <p class="plan-dialog__crumb">Floor plan <span id="pdIndex"></span></p>
-        <div class="plan-dialog__nav">
-          <button type="button" class="iconbtn" id="pdPrev" aria-label="Previous floor plan">←</button>
-          <button type="button" class="iconbtn" id="pdNext" aria-label="Next floor plan">→</button>
-          <button type="button" class="iconbtn" id="pdClose" aria-label="Close floor plan">✕</button>
+  <!-- Floor plan details -->
+  <dialog class="sheet" id="planDialog" aria-labelledby="pdName">
+    <div class="sheet__inner">
+      <header class="sheet__bar">
+        <p class="sheet__crumb">Floor plan <span id="pdIndex"></span></p>
+        <div class="sheet__nav">
+          <button type="button" class="round" id="pdPrev" aria-label="Previous floor plan">←</button>
+          <button type="button" class="round" id="pdNext" aria-label="Next floor plan">→</button>
+          <button type="button" class="round" id="pdClose" aria-label="Close floor plan">✕</button>
         </div>
       </header>
-      <div class="plan-dialog__body">
-        <figure class="plan-dialog__figure">
+      <div class="sheet__body">
+        <figure class="sheet__figure">
           <img id="pdImg" alt="">
           <figcaption><a id="pdImgLink" href="" target="_blank" rel="noopener">Open full-size floor plan ↗</a></figcaption>
         </figure>
-        <div class="plan-dialog__info">
-          <h2 class="display-l" id="pdName"></h2>
-          <dl class="specs" id="pdSpecs"></dl>
-          <p class="plan-dialog__note" id="pdNote" hidden></p>
-          <div class="plan-dialog__price" id="pdPrice"></div>
-          <div class="plan-dialog__ctas">
-            <a class="btn btn--ink" id="pdLive" href="" target="_blank" rel="noopener">See Available Homes</a>
-            <a class="btn btn--line" href="" data-link="apply" target="_blank" rel="noopener">Apply Online</a>
-            <a class="textlink" href="" data-link="contact" target="_blank" rel="noopener">Schedule a tour</a>
+        <div class="sheet__info">
+          <h2 class="sheet__name" id="pdName"></h2>
+          <dl class="viewer__specs" id="pdSpecs"></dl>
+          <p class="sheet__note" id="pdNote" hidden></p>
+          <div class="sheet__price" id="pdPrice"></div>
+          <div class="sheet__ctas">
+            <a class="btn btn--coral" id="pdLive" href="" target="_blank" rel="noopener">See Available Homes ↗</a>
+            <a class="btn btn--line" href="" data-link="apply" target="_blank" rel="noopener">Apply Online ↗</a>
+            <a class="link" href="" data-link="contact" target="_blank" rel="noopener">Schedule a tour ↗</a>
           </div>
-          <details class="plan-dialog__features">
+          <details class="sheet__features">
             <summary>Home features</summary>
             <ul id="pdFeatures"></ul>
-            <p class="fineprint">Not all features are available in every rental home.</p>
+            <p class="fine">Not all features are available in every rental home.</p>
           </details>
-          <p class="fineprint" id="pdDisclosure"></p>
+          <p class="fine" id="pdDisclosure"></p>
         </div>
       </div>
     </div>
@@ -454,17 +414,17 @@
 
   <!-- Lightbox -->
   <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
-    <button type="button" class="iconbtn lightbox__close" id="lbClose" aria-label="Close photo viewer">✕</button>
-    <button type="button" class="iconbtn lightbox__prev" id="lbPrev" aria-label="Previous photo">←</button>
+    <button type="button" class="round lightbox__close" id="lbClose" aria-label="Close photo viewer">✕</button>
+    <button type="button" class="round lightbox__prev" id="lbPrev" aria-label="Previous photo">←</button>
     <figure class="lightbox__figure">
       <img id="lbImg" alt="">
-      <figcaption><span id="lbCaption"></span><span id="lbCount" class="lightbox__count"></span></figcaption>
+      <figcaption><span id="lbCaption"></span><span id="lbCount"></span></figcaption>
     </figure>
-    <button type="button" class="iconbtn lightbox__next" id="lbNext" aria-label="Next photo">→</button>
+    <button type="button" class="round lightbox__next" id="lbNext" aria-label="Next photo">→</button>
   </dialog>
 
   <noscript>
-    <p class="noscript">This page needs JavaScript for floor plans and photos. View <a href="https://www.ludlampoint.com/miami/ludlam-point/conventional/">floor plans</a> or call (239) 999-8374.</p>
+    <p class="noscript">This page needs JavaScript for floor plans and photos. See <a href="https://www.ludlampoint.com/miami/ludlam-point/conventional/">floor plans</a> or call (239) 999-8374.</p>
   </noscript>
 
   <script src="assets/js/data.js"></script>

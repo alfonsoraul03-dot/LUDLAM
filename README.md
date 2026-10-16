@@ -1,6 +1,6 @@
 # Ludlam Point — website
 
-A from-scratch redesign of [ludlampoint.com](https://www.ludlampoint.com): a cinematic, scroll-driven single page for Ludlam Point, 6880 SW 44th Street, Miami, FL 33155.
+A from-scratch redesign of [ludlampoint.com](https://www.ludlampoint.com): a cinematic, scroll-driven single page with a bright Miami palette (pool turquoise, coral, sun yellow, palm green) for Ludlam Point, 6880 SW 44th Street, Miami, FL 33155.
 
 Static HTML, CSS and vanilla JavaScript. No build step and no dependencies.
 
@@ -32,8 +32,8 @@ Edit `assets/js/data.js` only. All facts there were taken from the official site
 
 ## Leasing actions
 
-All CTAs use the official systems: Apply (Entrata application portal), Schedule a Tour (official contact / guest-card form), Check Availability (live plan pages), 360° tour (TourBuilder), Resident portal (Homebody), and Google Maps directions. The site does not collect form data itself, so it never shows a false confirmation.
+All CTAs use the official systems: Apply (Entrata application portal), Schedule a Tour (official contact / guest-card form), Check Availability (live plan pages), Resident portal (Homebody), and Google Maps directions. The site does not collect form data itself, so it never shows a false confirmation.
 
 ## Accessibility and motion
 
-Semantic landmarks, skip link, keyboard-operable dialogs, tabs and lightbox, visible focus states, and `prefers-reduced-motion` support (all scroll scenes rest in their final state). Mobile has its own layouts: swipeable community reel, per-scene amenity photos, full-screen plan sheet and a leasing dock that hides near the footer.
+Semantic landmarks, skip link, keyboard-operable plan tabs, dialogs and lightbox, visible focus states, and `prefers-reduced-motion` support (all scroll scenes rest in their final state). Mobile has its own layouts: swipeable postcards, per-step interior photos, stacked amenity color blocks, a full-screen plan sheet and a floating leasing dock that hides near the footer.
