@@ -28,7 +28,7 @@ Edit `assets/js/data.js` only. All facts there were taken from the official site
 
 - **Prices** are a dated snapshot (`checkedOn`). Every plan links to its live page in the official leasing system for current pricing and availability. Set `showPriceSnapshot: false` to hide prices entirely.
 - **Specials** show only between `special.starts` and `special.ends`, then hide automatically.
-- **Photos** load from the property's Entrata media library using its `fit-in/WxH` resizing for responsive `srcset`. If a resized copy fails, the original file loads instead.
+- **Photos**: the original files are in `assets/photos/`. The site loads WebP copies from `assets/img/` at 640, 1280 and 1920 px. After adding or replacing a photo, run `python3 scripts/build-images.py`. If a local copy is missing, that photo falls back to the property's Entrata media library. `scripts/download-photos.sh` re-downloads the originals from that library.
 
 ## Leasing actions
 

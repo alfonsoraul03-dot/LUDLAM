@@ -10,31 +10,49 @@
   const money = (n) => "$" + n.toLocaleString("en-US");
 
   /* ------------------------------------------------------------
-     Images: responsive srcset from the property's media library,
-     with a fallback to the original file if a resized copy fails.
+     Images. Each photo tries, in order:
+       1. the site's own WebP copies (assets/img/<w>/<key>.webp)
+       2. resized copies from the property's media library
+       3. the original file on the media library
+     A photo that fails all three fades to the placeholder tone.
      ------------------------------------------------------------ */
-  const WIDTHS = [640, 1080, 1600, 2400];
+  const LOCAL_WIDTHS = [640, 1280, 1920];
+  const REMOTE_WIDTHS = [640, 1080, 1600, 2400];
+  const keyOf = {};
+  Object.entries(LP.photos).forEach(([k, p]) => { keyOf[p] = k; });
+  const local = (key, w) => "assets/img/" + w + "/" + key + ".webp";
   const sized = (path, w) => LP.media + "fit-in/" + w + "x" + w + "/" + path;
   const original = (path) => LP.media + path;
 
+  function applyStage(img) {
+    const path = img._photo;
+    const key = keyOf[path];
+    const stage = img._stage;
+    if (stage === 0 && key && LP.useLocalPhotos) {
+      img.srcset = LOCAL_WIDTHS.map((w) => local(key, w) + " " + w + "w").join(", ");
+      img.src = local(key, 1280);
+    } else if (stage <= 1) {
+      img._stage = 1;
+      img.srcset = REMOTE_WIDTHS.map((w) => sized(path, w) + " " + w + "w").join(", ");
+      img.src = sized(path, 1600);
+    } else if (stage === 2) {
+      img.removeAttribute("srcset");
+      img.src = original(path);
+    } else {
+      img.classList.add("is-missing");
+    }
+  }
   function setPhoto(img, path, opts = {}) {
     if (!path) return;
     img.decoding = "async";
     if (!opts.eager) img.loading = "lazy";
     else img.fetchPriority = "high";
     img.sizes = opts.sizes || "100vw";
-    img.srcset = WIDTHS.map((w) => sized(path, w) + " " + w + "w").join(", ");
-    img.src = sized(path, 1600);
-    img.addEventListener("error", function onErr() {
-      if (!img.dataset.fallback) {
-        img.dataset.fallback = "1";
-        img.removeAttribute("srcset");
-        img.src = original(path);
-      } else {
-        img.removeEventListener("error", onErr);
-        img.classList.add("is-missing");
-      }
-    });
+    img.classList.remove("is-missing");
+    img._photo = path;
+    img._stage = 0;
+    img.onerror = () => { img._stage += 1; applyStage(img); };
+    applyStage(img);
   }
   function photoTag(path, alt, sizes, extra = "") {
     const img = document.createElement("img");
@@ -185,7 +203,7 @@
     img.alt = p.imageAlt;
     setPhoto(img, p.image, { sizes: "(max-width: 860px) 100vw, 60vw" });
     img.loading = "eager";
-    $("#pdImgLink").href = original(p.image);
+    $("#pdImgLink").href = LP.useLocalPhotos ? local(keyOf[p.image], 1920) : original(p.image);
     $("#pdSpecs").innerHTML = `
       <div><dt>Bedrooms</dt><dd>${p.beds}</dd></div>
       <div><dt>Baths</dt><dd>${p.baths}</dd></div>
