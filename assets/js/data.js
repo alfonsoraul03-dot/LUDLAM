@@ -203,72 +203,37 @@
       "Wired for high-speed internet",
     ],
 
-    /* Amenity story scenes — every item is listed on the official amenities page */
-    scenes: [
-      {
-        id: "mornings",
-        tone: "sun",
-        title: "Slow mornings.",
-        body: "Light through the bedroom window, coffee at the granite counter, and laundry running in your own washer and dryer.",
-        items: ["In-home washer and dryer", "Spacious walk-in closets", "Granite counters", "Ceiling fan in the dining room"],
-        photo: P.bed1,
-        alt: "Bright bedroom with a tufted headboard and a window",
-      },
-      {
-        id: "recharge",
-        tone: "pool",
-        title: "Room to recharge.",
-        body: "A fitness center for the early workout, then the pool for the long afternoon. Both are a short walk from your door.",
-        items: ["Fitness center", "Community swimming pool"],
-        photo: P.amenGym,
-        alt: "Fitness center with cardio equipment, a yellow accent wall and large mirrors",
-      },
-      {
-        id: "outside",
-        tone: "palm",
-        title: "Time outside.",
-        body: "Courtyards with BBQ grills for weekend cookouts, a basketball court for a pickup game, and a bark park with a paw spa for the dog.",
-        items: ["Courtyards with BBQ grills", "Basketball court", "Bark park with paw spa", "Wi-Fi in common areas"],
-        photo: P.amenBbq,
-        alt: "Outdoor grilling area with stainless-steel barbecues and tropical landscaping",
-      },
-      {
-        id: "routine",
-        tone: "coral",
-        title: "Space for your routine.",
-        body: "The everyday details are handled: a gated electronic entrance, a car care center, bike storage and maintenance around the clock.",
-        items: ["Gated electronic entrance", "Car care center with wash and vacuum", "Bicycle storage", "24-hour emergency maintenance", "Online rent payments", "Flex | Split rent option"],
-        photo: P.amenCarWash,
-        alt: "Outdoor car wash station surrounded by greenery and palm trees",
-      },
+    /* 04 — Life at Ludlam Point: every item is on the official amenities page */
+    life: [
+      { name: "The Pool", line: "Cool off or lounge poolside at the community swimming pool.", photo: P.amenPool, alt: "Community pool with lounge chairs, palm trees and apartment buildings" },
+      { name: "Fitness Center", line: "A fitness center to get your heart pumping and stay active.", photo: P.amenGym, alt: "Fitness center with cardio machines, a yellow accent column and mirrors" },
+      { name: "Courtyard Grills", line: "Lush courtyards with BBQ grills for fresh-air hangouts and weekend cookouts.", photo: P.amenBbq, alt: "Covered grill area with stainless-steel grills and tropical plants" },
+      { name: "Basketball Court", line: "A court for a quick pickup game or a solo shootaround.", photo: P.amenCourt, alt: "Outdoor basketball court framed by trees" },
+      { name: "Bark Park & Paw Spa", line: "A bark park with a paw spa for playtime and post-adventure cleanups.", photo: P.amenDog, alt: "Dog wash station beside a gravel walkway and hedges" },
+      { name: "Car Care Center", line: "Wash and vacuum stations to keep your ride looking sharp.", photo: P.amenCarWash, alt: "Car wash and vacuum station surrounded by palms" },
+    ],
+    alsoHere: [
+      "Gated electronic entrance",
+      "Wi-Fi in common areas",
+      "Bicycle storage",
+      "24-hour emergency maintenance",
+      "Online rent payments",
+      "Flex | Split rent option",
+      "Dogs and cats welcome",
     ],
 
-    /* "Step inside" sequence: each step swaps the photo and the room color */
-    insideSteps: [
-      {
-        tone: "pool",
-        kicker: "Living",
-        title: "Open plans with light to spare.",
-        body: "Living, dining and kitchen share one bright room, with hardwood-style floors, crown molding and a ceiling fan over the dining table.",
-        photo: P.openConcept,
-        alt: "Open-concept living room, dining area and kitchen with breakfast bar",
-      },
-      {
-        tone: "sun",
-        kicker: "Kitchen",
-        title: "Granite, subway tile and stainless steel.",
-        body: "White custom cabinetry with brushed nickel hardware, energy-efficient stainless appliances, a dishwasher and a single-handle pullout faucet.",
-        photo: P.kitchenBar,
-        alt: "Kitchen with stainless-steel appliances, granite counters and bar seating",
-      },
-      {
-        tone: "coral",
-        kicker: "Bedroom",
-        title: "Room for everything you own.",
-        body: "Spacious walk-in closets, an in-home washer and dryer, and 8-foot ceilings that open up to vaulted ceilings on top floors.",
-        photo: P.bed3,
-        alt: "Bedroom with a yellow throw, wood-style floor and large window",
-      },
+    /* 03 — Inside your space: interior filmstrip */
+    interiors: [
+      [P.openConcept, "Living, dining and kitchen in one open room"],
+      [P.kitchenBar, "Kitchen with granite counters and bar seating"],
+      [P.living, "Living room"],
+      [P.bed3, "Bedroom with a large window"],
+      [P.openKitchen, "Kitchen opening to the living room"],
+      [P.bed1, "Bedroom with tufted headboard"],
+      [P.dining, "Dining area"],
+      [P.model3, "Two-level home with stairs"],
+      [P.bed2, "Bedroom with nightstands and mirror"],
+      [P.kitchenWhite, "White cabinetry and stainless appliances"],
     ],
 
     gallery: {

@@ -1,8 +1,8 @@
 # Ludlam Point — website
 
-A from-scratch redesign of [ludlampoint.com](https://www.ludlampoint.com): a cinematic, scroll-driven single page with a bright Miami palette (pool turquoise, coral, sun yellow, palm green) for Ludlam Point, 6880 SW 44th Street, Miami, FL 33155.
+A from-scratch redesign of [ludlampoint.com](https://www.ludlampoint.com): an editorial, cinematic site for Ludlam Point, 6880 SW 44th Street, Miami, FL 33155, built as an architectural film in eight scenes.
 
-Static HTML, CSS and vanilla JavaScript. No build step and no dependencies.
+Static HTML, CSS and vanilla JavaScript. No build step to serve it and no runtime dependencies.
 
 ## Run it
 
@@ -11,29 +11,33 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Any static host works (GitHub Pages, Netlify, Vercel, S3). For GitHub Pages: **Settings → Pages → Deploy from branch → `main` / root**.
+Any static host works. For GitHub Pages: **Settings → Pages → Deploy from branch → `main` / root**.
 
 ## Structure
 
-| File | What it does |
+| Path | What it is |
 |---|---|
-| `index.html` | Page markup, SEO metadata, schema.org `ApartmentComplex` data |
-| `assets/css/styles.css` | Design tokens, layout, scroll scenes, mobile art direction, reduced motion |
-| `assets/js/data.js` | **All content**: floor plans, photos, amenities, links, hours, legal links |
-| `assets/js/main.js` | Rendering and interactions: scroll scenes, plan filter and detail, gallery, lightbox, map, nav, mobile dock |
+| `index.html` | Homepage: 01 Introduction · 02 Residences · 03 Inside Your Space · 04 Life at Ludlam Point · 05 The Miami Connection · 06 Find Your Residence · 07 Your Next Chapter · 08 Footer |
+| `residences/<plan>.html` | One page per floor plan (Carlyle, Delano, Avalon, Beacon), generated from `data.js` |
+| `assets/css/styles.css` | Design tokens, scenes, mobile art direction, reduced motion |
+| `assets/js/data.js` | **All content**: plans, photos, amenities, links, hours, legal links |
+| `assets/js/main.js` | Scroll choreography, residence index, filmstrip and lightbox, amenity sequence, plan table, map, nav, mobile dock |
+| `assets/photos/` | Original property photos from the official site |
+| `assets/img/<w>/` | WebP copies at 640, 1280 and 1920 px that the site loads |
+| `scripts/` | `build-images.py` (photos → WebP), `build-residences.mjs` (plan pages), `download-photos.sh` (re-download originals) |
 
 ## Updating content
 
-Edit `assets/js/data.js` only. All facts there were taken from the official site on Oct 16, 2026.
+Edit `assets/js/data.js`, then run `node scripts/build-residences.mjs` so the plan pages match. All facts were taken from the official site on Oct 16, 2026.
 
-- **Prices** are a dated snapshot (`checkedOn`). Every plan links to its live page in the official leasing system for current pricing and availability. Set `showPriceSnapshot: false` to hide prices entirely.
-- **Specials** show only between `special.starts` and `special.ends`, then hide automatically.
-- **Photos**: the original files are in `assets/photos/`. The site loads WebP copies from `assets/img/` at 640, 1280 and 1920 px. After adding or replacing a photo, run `python3 scripts/build-images.py`. If a local copy is missing, that photo falls back to the property's Entrata media library. `scripts/download-photos.sh` re-downloads the originals from that library.
+- **Prices** are a dated snapshot (`checkedOn`). Every plan links to its live page in the official leasing system. Set `showPriceSnapshot: false` to hide prices.
+- **Specials** show only between `special.starts` and `special.ends`.
+- **Photos**: add originals to `assets/photos/` and run `python3 scripts/build-images.py`. A missing local copy falls back to the property's Entrata media library.
 
 ## Leasing actions
 
-All CTAs use the official systems: Apply (Entrata application portal), Schedule a Tour (official contact / guest-card form), Check Availability (live plan pages), Resident portal (Homebody), and Google Maps directions. The site does not collect form data itself, so it never shows a false confirmation.
+Every call to action uses the official systems: Apply (Entrata application portal), Schedule a Tour and Contact (official contact / guest-card form), Check Availability (live plan pages), Resident Portal (Homebody), Google Maps directions, and the leasing office phone. The site collects no form data itself. The original site lists no social media accounts, so none are linked.
 
 ## Accessibility and motion
 
-Semantic landmarks, skip link, keyboard-operable plan tabs, dialogs and lightbox, visible focus states, and `prefers-reduced-motion` support (all scroll scenes rest in their final state). Mobile has its own layouts: swipeable postcards, per-step interior photos, stacked amenity color blocks, a full-screen plan sheet and a floating leasing dock that hides near the footer.
+Semantic landmarks, skip link, keyboard-operable filters, filmstrip and lightbox, visible focus states, and full `prefers-reduced-motion` support: every pinned scene rests in its finished state. Phones get their own layouts: stacked amenity photographs instead of the pinned sequence, inline images in the residence index, card-style plan rows and a leasing dock that hides near the footer.
